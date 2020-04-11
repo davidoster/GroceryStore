@@ -12,10 +12,12 @@ import java.util.List;
  * @author mac
  */
 public class GroceryStore extends Building {
+    static String ownersName = "John";
     private String name;
     final int STARTHOURSHIFT = 9;
     final int ENDHOURSHIFT = 17;
     protected List<Product> products;
+    protected List<Product> sales;
     
     public GroceryStore() {
         super();
@@ -40,7 +42,7 @@ public class GroceryStore extends Building {
         return products;
     }
 
-    protected void setProducts(List<Product> products) {
+    public void setProducts(List<Product> products) {
         this.products = products;
     }
     
