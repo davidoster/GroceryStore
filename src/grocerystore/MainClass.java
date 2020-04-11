@@ -5,10 +5,11 @@
  */
 package grocerystore;
 
-import grocerystore.models.GroceryStore;
 import grocerystore.models.Potatoe;
+import grocerystore.models.GroceryStore;
 import grocerystore.models.Product;
 import grocerystore.models.Vegetable;
+import java.util.ArrayList;
 
 /**
  *
@@ -34,9 +35,13 @@ public class MainClass {
         */
         GroceryStore gs = new GroceryStore("Fresh Vegetables");
         Product p1 = new Product("Potatoe", 20.0f);
-//        Product p2a = new Vegetable();
-//        Product p2 = new Vegetable("Potatoe", 20.0f);
-        Product p3 = new Potatoe();
+        System.out.println("p1: " + p1);
+        Product p2 = new Vegetable("Potatoe1", 20.0f);
+        System.out.println("p2: " + p2);
+        Product p4 = new Vegetable("Tomatoe1", 25.0f);
+        System.out.println("p4: " + p4);
+        Product p3 = new Potatoe("Potatoe2", 20.0f);
+        System.out.println("p3: " + p3);
         
         
         
