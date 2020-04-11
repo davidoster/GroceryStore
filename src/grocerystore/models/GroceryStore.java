@@ -5,6 +5,8 @@
  */
 package grocerystore.models;
 
+import java.util.List;
+
 /**
  *
  * @author mac
@@ -13,6 +15,7 @@ public class GroceryStore extends Building {
     private String name;
     final int STARTHOURSHIFT = 9;
     final int ENDHOURSHIFT = 17;
+    protected List<Product> products;
     
     public GroceryStore() {
         super();
@@ -33,6 +36,14 @@ public class GroceryStore extends Building {
         this.name = name;
     }
     
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    protected void setProducts(List<Product> products) {
+        this.products = products;
+    }
+    
     public void startShift() {
         System.out.println("Shift has just started, time is : " + STARTHOURSHIFT);
     };
@@ -40,6 +51,8 @@ public class GroceryStore extends Building {
     public void endShift() {
         System.out.println("Shift has just ended, time is : " + ENDHOURSHIFT);
     };
+
+    
 
     
 }

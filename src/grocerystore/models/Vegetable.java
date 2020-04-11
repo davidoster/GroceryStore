@@ -13,8 +13,13 @@ public class Vegetable extends Product {
 
     public Vegetable(String name, float price) {
 //        super(name, price);
-//        super.setName(name);
-//        super.setPrice(price);
+        super.setName(name);
+        super.setPrice(price);
     }
+    
+    protected void demoMethod() {
+        System.out.println("protected");
+    }
+    
     
 }

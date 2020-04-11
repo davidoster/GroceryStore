@@ -5,6 +5,8 @@
  */
 package grocerystore.models;
 
+import grocerystore.models.Vegetable;
+
 /**
  *
  * @author mac
@@ -13,6 +15,7 @@ public class Potatoe extends Vegetable {
     
     public Potatoe(String name, float price) {
         super(name,price);
+        super.demoMethod();
     }
     
 }

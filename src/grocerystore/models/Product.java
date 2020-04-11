@@ -5,6 +5,8 @@
  */
 package grocerystore.models;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author mac
